@@ -16,6 +16,7 @@ export interface Post {
     current: string;
   };
   body: [object];
+  comments: Comment[];
 }
 
 export interface Comment {
