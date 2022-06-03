@@ -17,3 +17,19 @@ export interface Post {
   };
   body: [object];
 }
+
+export interface Comment {
+  _id: string;
+  approved: boolean;
+  _createdAt: string;
+  _updatedAt: string;
+  email: string;
+  name: string;
+  post: {
+    _ref: string;
+    _type: string;
+  };
+  _rev: string;
+  type: string;
+  comment: string;
+}
